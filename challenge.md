@@ -266,7 +266,11 @@ career here, you'll have to answer the following:
   slightly different things running on all of them. How could containers help us
   improve this situation?
 
-Answer both of these questions (baseline ~5 sentences) here in text.
+The most important part of a code review for me is to have someone look over my code for things that aren't necessarily returning as errors in the console (because I'll see those myself!) but to find places where the code isn't quite doing what I meant it to do. It's easy to find places where your code doesn't work, but it's a lot harder to look at your own code and see what's running but isn't right. A print statement where there should be a return, or vice versa, for example, or a greater than sign instead of less than. Code reviews are also really helpful for a "where do I go from here?" checkpoint. You can show someone else the progress that you've made and then they can help you figure out what to do with the information you've gathered so far. 
+
+Containers can help to ensure everyone is running the same version of a module. One person writes a module, packages it up in a container, and then everyone else uses that module from the container to ensure that they all have the same version. If changes need to be made, a new container is created for everyone to access. This makes the same version available to everyone and keeps people from having different versions on their local machines without realizing it. It means that the module will behave the same on each person's computer and will therefore produce consistent results.
+
+
 
 ### Part 8 - Turn it in!
 
